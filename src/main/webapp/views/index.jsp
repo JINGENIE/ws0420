@@ -132,7 +132,7 @@
 
         <!-- Nav Item - Tables -->
         <li class="nav-item">
-            <a class="nav-link" href="tables.html">
+            <a class="nav-link" href="/tables">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Tables</span></a>
         </li>
@@ -363,17 +363,17 @@
 
             </nav>
 
-        <!-- Main Content -->
-        <c:choose>
-            <c:when test="${content == null}">
-                <jsp:include page="content.jsp"/>
-            </c:when>
-            <c:otherwise>
-                <jsp:include page="${content}.jsp"/>
-            </c:otherwise>
+            <!-- Main Content -->
+            <c:choose>
+                <c:when test="${center == null}">
+                    <jsp:include page="content.jsp"/>
+                </c:when>
+                <c:otherwise>
+                    <jsp:include page="${center}.jsp"/>
+                </c:otherwise>
 
-        </c:choose>
-    </div>
+            </c:choose>
+        </div>
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
